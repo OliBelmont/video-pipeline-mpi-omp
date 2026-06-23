@@ -27,7 +27,7 @@ video-pipeline-mpi-omp/
 │   ├── run_file.sh
 │   └── run_webcam.sh
 ├── examples/
-│   └── coloque_aqui_um_video.mp4
+│   └── video.mp4
 ├── Makefile
 └── README.md
 ```
