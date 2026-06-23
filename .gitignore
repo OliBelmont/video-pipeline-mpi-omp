@@ -1,0 +1,7 @@
+bin/
+build/
+*.avi
+*.o
+*.out
+.DS_Store
+.vscode/
