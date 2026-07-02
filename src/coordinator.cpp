@@ -28,6 +28,9 @@ double elapsed_ms(const Clock::time_point& start, const Clock::time_point& end) 
 
 // Envia um frame do coordenador para um worker específico.
 void send_frame_to_worker(int worker_rank, int frame_id, const cv::Mat& frame, FilterType filter) {
+    //essa função seria como se fosse uma folha de papel, quando envia a memoria continua com pixels seria como um texto alinhado e memoria nao continua seria como um texto que nao foi espalhado corretamente, neste caso precisa de um ajuste de memoria
+
+
     // O MPI precisa enviar uma região contínua de memória.
     // Caso o cv::Mat não esteja contínuo, fazemos uma cópia.
     cv::Mat contiguous = frame.isContinuous() ? frame : frame.clone();
